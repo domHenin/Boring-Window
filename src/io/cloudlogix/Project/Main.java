@@ -6,14 +6,19 @@ import java.util.Map;
 import javax.swing.*;
 
 public class Main {
-    public static void main(String[] args) {g
+    public static void main(String[] args) {
 //        System.out.println("Hello, World");
-        JFrame jFrame = new JFrame();
+        JFrame jFrame = new JFrame("JAVA ROCKS");
 
         jFrame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        jFrame.setTitle("JAVA ROCKS");
+//        jFrame.setTitle("JAVA ROCKS");
         jFrame.setSize(300, 300);
         jFrame.setVisible(true);
+
+        JLabel jLabel = new JLabel();
+        jLabel.setText("Hello, World");
+
+        jFrame.add(jLabel);
 
     }
 }
